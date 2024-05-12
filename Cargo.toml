@@ -1,0 +1,26 @@
+[package]
+name = "best_skn_message"
+description = "A Simple Message Library For Rust"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.78.0"
+readme = "README.md"
+license = "MIT"
+license-file = "LICENSE.txt"
+keywords = ["message", "library"]
+categories = ["command-line-interface"]
+exclude = ["/.vscode", "/.github"]
+authors = ["SKN Shukhan"]
+repository = "https://github.com/skn437/skn-rust-message"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+console = "0.15.8"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
