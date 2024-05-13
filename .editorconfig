@@ -59,6 +59,10 @@ indent_size = 2
 [*.{ts,tsx,js,jsx}]
 indent_size = 2
 
+# Go files
+[*.go]
+indent_size = 2
+
 # Dotnet code style settings:
 [*.{cs,vb}]
 
@@ -215,11 +219,19 @@ dotnet_diagnostic.IDE0003.severity = suggestion
 # IDE0004: Remove unnecessary cast
 dotnet_diagnostic.IDE0004.severity = suggestion
 
+# IDE0005: Using directive is unnecessary
+dotnet_diagnostic.IDE0005.severity = silent
+
 # IDE0008: Use explicit type instead of var
 dotnet_diagnostic.IDE0008.severity = warning
 
 # IDE0010: Add missing cases to switch statement
 dotnet_diagnostic.IDE0010.severity = error
+
+# IDE0011: Add braces
+csharp_prefer_braces = when_multiline:warning
+# NOTE: We need the below severity entry for Add Braces due to https://github.com/dotnet/roslyn/issues/44201
+dotnet_diagnostic.IDE0011.severity = warning
 
 # IDE0016: Use throw expression
 dotnet_diagnostic.IDE0016.severity = suggestion
@@ -251,10 +263,6 @@ dotnet_diagnostic.IDE0033.severity = suggestion
 # IDE0034: Simplify `default` expression
 dotnet_diagnostic.IDE0034.severity = suggestion
 
-# IDE0073: File header
-dotnet_diagnostic.IDE0073.severity = warning
-file_header_template = Copyright (c) Microsoft.  All Rights Reserved.  Licensed under the MIT license.  See License.txt in the project root for license information.
-
 # IDE0035: Remove unreachable code
 dotnet_diagnostic.IDE0035.severity = error
 
@@ -266,6 +274,9 @@ dotnet_diagnostic.IDE0037.severity = suggestion
 
 # IDE0039: Use local function instead of lambda
 dotnet_diagnostic.IDE0039.severity = suggestion
+
+# IDE0040: Add accessibility modifiers
+dotnet_diagnostic.IDE0040.severity = warning
 
 # IDE0041: Use `is` null check
 dotnet_diagnostic.IDE0041.severity = suggestion
@@ -284,14 +295,6 @@ dotnet_diagnostic.IDE0045.severity = suggestion
 
 # IDE0046: Use conditional expression for return
 dotnet_diagnostic.IDE0046.severity = suggestion
-
-# IDE0011: Add braces
-csharp_prefer_braces = when_multiline:warning
-# NOTE: We need the below severity entry for Add Braces due to https://github.com/dotnet/roslyn/issues/44201
-dotnet_diagnostic.IDE0011.severity = warning
-
-# IDE0040: Add accessibility modifiers
-dotnet_diagnostic.IDE0040.severity = warning
 
 # IDE0047: Remove unnecessary parentheses
 dotnet_diagnostic.IDE0047.severity = suggestion
@@ -339,6 +342,10 @@ dotnet_diagnostic.IDE0071.severity = suggestion
 # IDE0072: Add missing cases to switch expression
 dotnet_diagnostic.IDE0072.severity = error
 
+# IDE0073: File header
+dotnet_diagnostic.IDE0073.severity = warning
+file_header_template = Copyright (c) Microsoft.  All Rights Reserved.  Licensed under the MIT license.  See License.txt in the project root for license information.
+
 # IDE0074: Use coalesce compound assignment
 dotnet_diagnostic.IDE0074.severity = suggestion
 
@@ -371,9 +378,6 @@ dotnet_diagnostic.CA1012.severity = warning
 
 # CA1822: Make member static
 dotnet_diagnostic.CA1822.severity = warning
-
-# IDE0005: Using directive is unnecessary
-dotnet_diagnostic.IDE0005.severity = silent
 
 # dotnet_style_allow_multiple_blank_lines_experimental
 dotnet_diagnostic.IDE2000.severity = warning
