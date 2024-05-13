@@ -4,7 +4,7 @@
 
 > Rust
 
-[![Crates IO](https://img.shields.io/crates/v/best_skn_message)](gh) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
+[![Crates IO](https://img.shields.io/crates/v/best_skn_message)](https://crates.io/crates/best_skn_message) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
 
 &nbsp;
 
@@ -12,7 +12,7 @@
 
 ### Read the Rustdoc for the main Module
 
-- [Message Module](gh)
+- [Message Module](https://docs.rs/best_skn_message/1.0.0/best_skn_message/message/index.html)
 
 &nbsp;
 
