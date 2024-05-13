@@ -13,7 +13,7 @@ use console::style;
 /// ## Usage:
 ///
 /// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` micros
+/// - To print out, use `print!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -40,7 +40,7 @@ pub fn error(message: &str) -> String {
 /// ## Usage:
 ///
 /// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` micros
+/// - To print out, use `print!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -67,7 +67,7 @@ pub fn success(message: &str) -> String {
 /// ## Usage:
 ///
 /// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` micros
+/// - To print out, use `print!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -94,7 +94,7 @@ pub fn info(message: &str) -> String {
 /// ## Usage:
 ///
 /// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` micros
+/// - To print out, use `print!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -121,7 +121,7 @@ pub fn action_failure(name: &str) -> String {
 /// ## Usage:
 ///
 /// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` micros
+/// - To print out, use `print!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -149,14 +149,14 @@ pub fn action_complete(name: &str) -> String {
 /// ## Usage:
 ///
 /// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` micros
+/// - To print out, use `print!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
 /// ```rust
 /// use best_skn_message::message;
 ///
-/// let notify: String = message::action_notify("Run Shell Scripts", "Safe to use without error");
+/// let notify: String = message::action_notify("Run Shell Scripts", "Safe to use without error!");
 /// print!("{}", notify);
 /// ```
 pub fn action_notify(name: &str, notification: &str) -> String {

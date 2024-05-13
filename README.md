@@ -88,7 +88,7 @@
 > let complete: String = message::action_complete("Read Config File"); // Action name as argument
 > print!("{}", complete);
 >
-> let notify: String = message::action_notify("Run Shell Scripts", "Safe to use without error"); // Action name & notification info message as arguments
+> let notify: String = message::action_notify("Run Shell Scripts", "Safe to use without error!"); // Action name & notification info message as arguments
 > print!("{}", notify);
 > ```
 
