@@ -22,7 +22,7 @@
 
 ### I made this library so that I can use it in all of my rust projects without writing the same codes over and over again
 
-### The main Module of this library is `Message` which holds 3 functions to return colored String & 3 functions to output notification messages
+### The main Module of this library is `Message` which holds 3 functions to return colored Strings & 3 functions to output formatted static String notification messages
 
 &nbsp;
 
@@ -36,7 +36,7 @@
   - success (takes 1 argument & returns a green colored String with tick mark)
   - info (takes 1 argument & returns a blue colored String with book info mark)
 
-- It has 3 functions which outputs notifications
+- It has 3 functions which outputs formatted static String notifications
 
   - action_failure (takes 1 argument as 'action name' & outputs an action failure message)
   - action_complete (takes 1 argument as 'action name' & outputs an action complete message)
@@ -74,12 +74,22 @@
 
 > ```rust
 > let error: String = message::error("Error occured!");
-> let success: String = message::success("Process completed!");
-> let info: String = message::info("Process is safe to pause!");
+> panic!("{}", error);
 >
-> message::action_failure("Copy Files"); // Action name as argument
-> message::action_complete("Read Config File"); // Action name as argument
-> message::action_notify("Run Shell Scripts", "Safe to use without error"); // Action name & notification info message as arguments
+> let success: String = message::success("Process completed!");
+> print!("{}", success);
+>
+> let info: String = message::info("Process is safe to pause!");
+> print!("{}", info);
+>
+> let failure: String = message::action_failure("Copy Files"); // Action name as argument
+> panic!("{}", failure);
+>
+> let complete: String = message::action_complete("Read Config File"); // Action name as argument
+> print!("{}", complete);
+>
+> let notify: String = message::action_notify("Run Shell Scripts", "Safe to use without error"); // Action name & notification info message as arguments
+> print!("{}", notify);
 > ```
 
 &nbsp;
