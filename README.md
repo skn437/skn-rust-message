@@ -12,7 +12,7 @@
 
 ### Read the Rustdoc for the main Module
 
-- [Message Module](https://docs.rs/best_skn_message/1.0.1/best_skn_message/message/index.html)
+- [Message Module](https://docs.rs/best_skn_message/1.1.0/best_skn_message/message/index.html)
 
 &nbsp;
 
@@ -41,6 +41,8 @@
   - action_failure (takes 1 argument as 'action name' & outputs an action failure message)
   - action_complete (takes 1 argument as 'action name' & outputs an action complete message)
   - action_notify (takes 2 arguments as 'action name', 'notification info' & outputs an action info message)
+
+- The String returned by each function, doesn't contain new line character i.e. '\n'
 
 &nbsp;
 
@@ -74,22 +76,22 @@
 
 > ```rust
 > let error: String = message::error("Error occured!");
-> panic!("{}", error);
+> panic!("{} \n", error);
 >
 > let success: String = message::success("Process completed!");
-> print!("{}", success);
+> println!("{}", success);
 >
 > let info: String = message::info("Process is safe to pause!");
-> print!("{}", info);
+> println!("{}", info);
 >
 > let failure: String = message::action_failure("Copy Files"); // Action name as argument
-> panic!("{}", failure);
+> panic!("{} \n", failure);
 >
 > let complete: String = message::action_complete("Read Config File"); // Action name as argument
-> print!("{}", complete);
+> println!("{}", complete);
 >
 > let notify: String = message::action_notify("Run Shell Scripts", "Safe to use without error!"); // Action name & notification info message as arguments
-> print!("{}", notify);
+> println!("{}", notify);
 > ```
 
 &nbsp;
