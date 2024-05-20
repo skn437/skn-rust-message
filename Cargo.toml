@@ -1,20 +1,14 @@
 [package]
 name = "best_skn_message"
 description = "A Simple Message Library For Rust"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 rust-version = "1.78.0"
 readme = "README.md"
 license = "MIT"
 keywords = ["message", "library"]
 categories = ["command-line-interface"]
-exclude = [
-  "/.vscode",
-  "/.github",
-  ".gitignore",
-  ".editorconfig",
-  "rustfmt.toml"
-]
+exclude = ["/.github", ".editorconfig", ".gitignore", "rustfmt.toml"]
 authors = ["SKN Shukhan"]
 repository = "https://github.com/skn437/skn-rust-message"
 
