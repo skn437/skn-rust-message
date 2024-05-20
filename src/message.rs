@@ -16,8 +16,8 @@ use console::style;
 ///
 /// ## Usage:
 ///
-/// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` macros
+/// - The return String doesn't contain a new line character
+/// - To print out, use `print!`, `println!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -25,10 +25,10 @@ use console::style;
 /// use best_skn_message::message;
 ///
 /// let error: String = message::error("Error occured!");
-/// print!("{}", error);
+/// println!("{}", error);
 /// ```
 pub fn error(message: &str) -> String {
-  format!("{} ❌ \n", style(message).red())
+  format!("{} ❌", style(message).red())
 }
 
 /// Turns a plain String Slice into a green colored String
@@ -47,8 +47,8 @@ pub fn error(message: &str) -> String {
 ///
 /// ## Usage:
 ///
-/// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` macros
+/// - The return String doesn't contain a new line character
+/// - To print out, use `print!`, `println!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -56,10 +56,10 @@ pub fn error(message: &str) -> String {
 /// use best_skn_message::message;
 ///
 /// let success: String = message::success("Process completed!");
-/// print!("{}", success);
+/// println!("{}", success);
 /// ```
 pub fn success(message: &str) -> String {
-  format!("{} ✅ \n", style(message).green())
+  format!("{} ✅", style(message).green())
 }
 
 /// Turns a plain String Slice into a blue colored String
@@ -78,8 +78,8 @@ pub fn success(message: &str) -> String {
 ///
 /// ## Usage:
 ///
-/// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` macros
+/// - The return String doesn't contain a new line character
+/// - To print out, use `print!`, `println!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -87,10 +87,10 @@ pub fn success(message: &str) -> String {
 /// use best_skn_message::message;
 ///
 /// let info: String = message::info("Process is safe to pause!");
-/// print!("{}", info);
+/// println!("{}", info);
 /// ```
 pub fn info(message: &str) -> String {
-  format!("{} 📚 \n", style(message).blue())
+  format!("{} 📚", style(message).blue())
 }
 
 /// Gives a formatted static red colored action failure notification
@@ -109,8 +109,8 @@ pub fn info(message: &str) -> String {
 ///
 /// ## Usage:
 ///
-/// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` macros
+/// - The return String doesn't contain a new line character
+/// - To print out, use `print!`, `println!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -118,7 +118,7 @@ pub fn info(message: &str) -> String {
 /// use best_skn_message::message;
 ///
 /// let failure: String = message::action_failure("Copy Files");
-/// print!("{}", failure);
+/// println!("{}", failure);
 /// ```
 pub fn action_failure(name: &str) -> String {
   format!("'{}' {}", name, error("Action Failed To Complete!"))
@@ -140,8 +140,8 @@ pub fn action_failure(name: &str) -> String {
 ///
 /// ## Usage:
 ///
-/// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` macros
+/// - The return String doesn't contain a new line character
+/// - To print out, use `print!`, `println!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -149,7 +149,7 @@ pub fn action_failure(name: &str) -> String {
 /// use best_skn_message::message;
 ///
 /// let complete: String = message::action_complete("Read Config File");
-/// print!("{}", complete);
+/// println!("{}", complete);
 /// ```
 pub fn action_complete(name: &str) -> String {
   format!("'{}' {}", name, success("Action Completed Successfully!"))
@@ -172,8 +172,8 @@ pub fn action_complete(name: &str) -> String {
 ///
 /// ## Usage:
 ///
-/// - Don't use `println!` as the return String has already a new line
-/// - To print out, use `print!`, `format!`, `panic!` macros
+/// - The return String doesn't contain a new line character
+/// - To print out, use `print!`, `println!`, `format!`, `panic!` macros
 ///
 /// ## Example:
 ///
@@ -181,7 +181,7 @@ pub fn action_complete(name: &str) -> String {
 /// use best_skn_message::message;
 ///
 /// let notify: String = message::action_notify("Run Shell Scripts", "Safe to use without error!");
-/// print!("{}", notify);
+/// println!("{}", notify);
 /// ```
 pub fn action_notify(name: &str, notification: &str) -> String {
   format!("'{}': {}", name, info(notification))
