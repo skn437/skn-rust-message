@@ -21,4 +21,12 @@
 ///
 /// - It has 3 functions those return colored Strings as output
 /// - It has 3 functions those return formatted static notification String messages
+///
+/// ## Version:
+///
+/// 1.0.1
+///
+/// ## Since:
+///
+/// 2024-05-13
 pub mod message;

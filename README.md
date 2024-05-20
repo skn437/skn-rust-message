@@ -12,7 +12,7 @@
 
 ### Read the Rustdoc for the main Module
 
-- [Message Module](https://docs.rs/best_skn_message/1.0.0/best_skn_message/message/index.html)
+- [Message Module](https://docs.rs/best_skn_message/1.0.1/best_skn_message/message/index.html)
 
 &nbsp;
 

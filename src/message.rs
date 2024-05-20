@@ -10,6 +10,10 @@ use console::style;
 ///
 /// a red colored String
 ///
+/// ## Since:
+///
+/// v1.0.0
+///
 /// ## Usage:
 ///
 /// - Don't use `println!` as the return String has already a new line
@@ -36,6 +40,10 @@ pub fn error(message: &str) -> String {
 /// ## Returns:
 ///
 /// a green colored String
+///
+/// ## Since:
+///
+/// v1.0.0
 ///
 /// ## Usage:
 ///
@@ -64,6 +72,10 @@ pub fn success(message: &str) -> String {
 ///
 /// a blue colored String
 ///
+/// ## Since:
+///
+/// v1.0.0
+///
 /// ## Usage:
 ///
 /// - Don't use `println!` as the return String has already a new line
@@ -90,6 +102,10 @@ pub fn info(message: &str) -> String {
 /// ## Returns:
 ///
 /// a formatted static red colored String message
+///
+/// ## Since:
+///
+/// v1.0.0
 ///
 /// ## Usage:
 ///
@@ -118,6 +134,10 @@ pub fn action_failure(name: &str) -> String {
 ///
 /// a formatted static green colored String message
 ///
+/// ## Since:
+///
+/// v1.0.0
+///
 /// ## Usage:
 ///
 /// - Don't use `println!` as the return String has already a new line
@@ -145,6 +165,10 @@ pub fn action_complete(name: &str) -> String {
 /// ## Returns:
 ///
 /// a formatted static blue colored String message
+///
+/// ## Since:
+///
+/// v1.0.0
 ///
 /// ## Usage:
 ///
