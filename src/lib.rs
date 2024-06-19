@@ -17,7 +17,7 @@
 //!
 //! ## Version:
 //!
-//! 1.2.0
+//! 1.2.1
 
 /// This module provides functionalities of various notification outputs
 ///
