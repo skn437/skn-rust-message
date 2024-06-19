@@ -14,17 +14,17 @@
 //! ## Minimum Requirements:
 //!
 //! 💀 Rust Version: **1.78.0**
+//!
+//! ## Version:
+//!
+//! 1.2.0
 
 /// This module provides functionalities of various notification outputs
 ///
-/// ## `Message` module
+/// ## `message` module
 ///
 /// - It has 3 functions those return colored Strings as output
 /// - It has 3 functions those return formatted static notification String messages
-///
-/// ## Version:
-///
-/// 1.2.0
 ///
 /// ## Since:
 ///
