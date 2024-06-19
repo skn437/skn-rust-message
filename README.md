@@ -12,7 +12,7 @@
 
 ### Read the Rustdoc for the main Module
 
-- [Message Module](https://docs.rs/best_skn_message/1.1.0/best_skn_message/message/index.html)
+- [message](https://docs.rs/best_skn_message/1.1.0/best_skn_message/message/index.html)
 
 &nbsp;
 
@@ -22,13 +22,13 @@
 
 ### I made this library so that I can use it in all of my rust projects without writing the same codes over and over again
 
-### The main Module of this library is `Message` which holds 3 functions to return colored Strings & 3 functions to output formatted static String notification messages
+### The main Module of this library is `message` which holds 3 functions to return colored Strings & 3 functions to output formatted static String notification messages
 
 &nbsp;
 
 ## **_Details:_**
 
-### **`Message` Module:**
+### **`message` Module:**
 
 - It has 3 functions which return colored Strings as output
 
@@ -75,7 +75,7 @@
 ### For `Message` Module, use like the following (Just an example)
 
 > ```rust
-> let error: String = message::error("Error occured!");
+> let error: String = message::error("Error occurred!");
 > panic!("{} \n", error);
 >
 > let success: String = message::success("Process completed!");
@@ -98,5 +98,7 @@
 
 ## **_Dedicated To:_**
 
-- 👩‍🎨`Prodipta Das Logno` & 🧛‍♀️`Atoshi Sarker Prithula`: The two most special ladies of my life. I can't thank them enough for always treasuring me a lot. I am lucky that I met with these two amazing ladies. They have two special places in my heart and no other girl can ever replace them.
+- 👩‍🎨`Prodipta Das Logno` & 🧛‍♀️`Atoshi Sarker Prithula`: The two most special ladies of my life. I can't thank them
+  enough for always treasuring me a lot. I am lucky that I met with these two amazing ladies. They have two special
+  places in my heart and no other girl can ever replace them.
 - 💯`My Father & Mother`: The greatest treasures of my life ever.

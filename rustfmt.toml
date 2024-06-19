@@ -64,7 +64,7 @@ hide_parse_errors = false
 ignore = []
 # Indent style of imports
 imports_indent = "Block"
-# Item layout inside a imports block
+# Item layout inside an imports block
 imports_layout = "HorizontalVertical"
 # Indent on expressions or items
 indent_style = "Block"
