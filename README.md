@@ -12,7 +12,7 @@
 
 ### Read the Rustdoc for the main Module
 
-- [message](https://docs.rs/best_skn_message/1.2.3/best_skn_message/message/index.html)
+- [message](https://docs.rs/best_skn_message/1.2.4/best_skn_message/message/index.html)
 
 &nbsp;
 
@@ -98,7 +98,7 @@
 
 ## **_Dedicated To:_**
 
-- 👩‍⚕️`Tanjila Hasan Trina`: The long lost love of my life. The course of nature separated us from our paths and put us in separate places far away from each other. But no matter how separated we are right now, each and every moment of mine is only dedicated to you. We may not see each other in this lifetime as it seems but I will find you again in the next life. I just one to say: `世界は残酷だ それでも君を愛すよ`
+- 👩‍⚕️`Tanjila Hasan Trina`: The long lost love of my life. The course of nature separated us from our paths and put us in separate places far away from each other. But no matter how separated we are right now, each and every moment of mine is only dedicated to you. We may not see each other in this lifetime as it seems but I will find you again in the next life. I just want to say: `世界は残酷だ それでも君を愛すよ`
 - 💯`My Parents`: The greatest treasures of my life ever.
 
 &nbsp;
