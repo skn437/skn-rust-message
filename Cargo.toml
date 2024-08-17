@@ -1,9 +1,9 @@
 [package]
 name = "best_skn_message"
 description = "A Simple Message Library For Rust"
-version = "1.2.1"
+version = "1.2.2"
 edition = "2021"
-rust-version = "1.78.0"
+rust-version = "1.80.0"
 readme = "README.md"
 license = "MIT"
 keywords = ["message", "library"]

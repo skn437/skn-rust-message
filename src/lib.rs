@@ -13,11 +13,11 @@
 //!
 //! ## Minimum Requirements:
 //!
-//! 💀 Rust Version: **1.78.0**
+//! 💀 Rust Version: **1.80.0**
 //!
 //! ## Version:
 //!
-//! 1.2.1
+//! 1.2.2
 
 /// This module provides functionalities of various notification outputs
 ///
