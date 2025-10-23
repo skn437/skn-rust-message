@@ -16,7 +16,7 @@ repository = "https://github.com/skn437/skn-rust-message"
 maintenance = { status = "actively-developed" }
 
 [dependencies]
-console = "0.15.8"
+console = "0.16.1"
 
 [profile.dev]
 opt-level = 0
