@@ -1,6 +1,6 @@
 # SKN Rust Message Library
 
-<img width="150px" src="https://firebasestorage.googleapis.com/v0/b/skn-ultimate-project-la437.appspot.com/o/GitHub%20Library%2F06-Rust-SRM.svg?alt=media&token=31a6d76a-e240-458b-ae2a-9b90ec19a775" alt="rust" />
+<img width="150px" src="./public/rust.svg" alt="rust" />
 
 > Rust
 
@@ -12,7 +12,7 @@
 
 ### Read the Rustdoc for the main Module
 
-- [message](https://docs.rs/best_skn_message/1.2.5/best_skn_message/message/index.html)
+- [message](https://docs.rs/best_skn_message/1.3.0/best_skn_message/message/index.html)
 
 &nbsp;
 
@@ -31,13 +31,11 @@
 ### **`message` Module:**
 
 - It has 3 functions which return colored Strings as output
-
   - error (takes 1 argument & returns a red colored String with cross mark)
   - success (takes 1 argument & returns a green colored String with tick mark)
   - info (takes 1 argument & returns a blue colored String with book info mark)
 
 - It has 3 functions which outputs formatted static String notifications
-
   - action_failure (takes 1 argument as 'action name' & outputs an action failure message)
   - action_complete (takes 1 argument as 'action name' & outputs an action complete message)
   - action_notify (takes 2 arguments as 'action name', 'notification info' & outputs an action info message)
@@ -54,7 +52,7 @@
 
 ## **_Requirements:_**
 
-- 💀 Minimum Rust Version: `1.80.0`
+- 💀 Minimum Rust Version: `1.93.0`
 
 &nbsp;
 
@@ -98,8 +96,9 @@
 
 ## **_Dedicated To:_**
 
-- 👩‍🎨`Prodipta Das Logno` & 🧛‍♀️`Atoshi Sarker Prithula`: The two most special ladies of my life. My best wishes will always be with you two. May you two always be happy.
+- 👩‍🎨`Logno` & 🧛‍♀️`Atoshi`: The two most special ladies of my life. My best wishes will always be with you two.
 - 💯`My Parents`: The greatest treasures of my life ever.
+- 👩`Trina`: The lady who resides deep inside my heart. Our paths got separated, perhaps it was fate and I accepted it. But you are always in each and every moments of my life. May you be healthy and happy always.
 
 &nbsp;
 
